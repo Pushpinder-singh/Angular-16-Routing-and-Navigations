@@ -1,0 +1,18 @@
+<div class="container"><span><h3>Children Navigations</h3>
+<nav>
+    <ul>
+        <li><a routerLink="/about/projects" routerLinkActive="router-link-active" >Projects</a></li>
+        <li><a [routerLink]="['sponsors']" routerLinkActive="router-link-active" >Sponsors</a></li>
+        <li><a [routerLink]="['locations']" routerLinkActive="router-link-active" >Locations</a></li>
+        <li><a routerLink="/about/projects" [queryParams]="{noteId:901,title:'AngularProject'}">Pass Query Params in URL</a></li>
+    </ul>
+</nav></span>
+
+
+  <div class="details-section"><router-outlet />
+<div><span>
+{{noteId}}
+{{title}}
+</span></div>  
+</div>
+</div> 

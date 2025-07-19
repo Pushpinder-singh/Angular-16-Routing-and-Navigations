@@ -1,0 +1,13 @@
+<h1>Navigation bar</h1>
+<nav>
+    <ul>
+        <li><a routerLink="/" routerLinkActive="router-link-active" >Home</a></li>
+        <li><a routerLink="/about">About Us</a></li>
+        <li><a routerLink="/notes">Notes</a></li>
+        <li><a [routerLink]="['/note', '123']">Note 123</a></li>
+        <li><a [routerLink]="['/note', '101']">Note 101</a></li>
+        <li><a [routerLink]="['/note', '106']">Note 106</a></li>
+        <li><button (click)="navigateToNotes()">Navigate to Notes</button></li>
+        <li><button (click)="navigateToNoteById(123)">Navigate to Specific Note</button></li>
+    </ul>
+</nav>
